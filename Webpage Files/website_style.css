@@ -1,0 +1,286 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.responsive-wrapper {
+    width: 95%;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+}
+
+.header-left {
+    float: left;
+    width: 55%;
+
+    @media (max-width: 800px) {
+        width: 80%;
+    }
+
+    @media (max-width: 528px) {
+        display: none;
+    }
+}
+
+.header-right {
+    float: right;
+    display: block;
+    align-items: center;
+}
+
+.site-identity img {
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #f8f3eb;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    border-right: 1px solid #bbb;
+}
+
+.topnav a:hover {
+    background-color: #74b0ff52;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #74b0ff52;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        background-color: #74b0ff52;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+
+        &:first-child {
+            background-color: #74b0ff52;
+        }
+    }
+}
+
+
+.page-title {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: #74b0ff52;
+
+}
+
+.page-title h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    position: relative;
+}
+
+.page-title h1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: -3px;
+    height: 2px;
+    background-color: #000;
+}
+
+body {
+    font-family: "Trebuchet MS";
+    padding: 10px;
+    background: #f8f3eb;
+}
+
+.magazine-layout-indexPage {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-row-gap: 2rem;
+
+}
+
+.magazine-layout-otherPages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 70%;
+    grid-row-gap: 2rem;
+}
+
+.magazine-column {
+    padding: 0 1.5rem;
+    grid-column: span 2;
+
+    @media (min-width: 768px) {
+        grid-column: span 1;
+        border-right: 1px solid #CCC;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+}
+
+.article {
+    &+.article {
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid #ccc;
+    }
+}
+
+.article-title {
+    font-family: "Trebuchet MS";
+    font-weight: 900;
+    line-height: 1.25;
+    color: #000;
+
+    &--large {
+        font-size: 2rem;
+
+        &+* {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &--medium {
+        font-size: 1.5rem;
+
+        &+* {
+            margin-top: 0.75rem;
+        }
+    }
+
+    &--small {
+        font-size: 1.25rem;
+
+        &+* {
+            margin-top: 0.75rem;
+        }
+    }
+}
+
+.article-excerpt {
+    font-size: 1rem;
+    line-height: 1;
+
+    p+p {
+        margin-top: 1.5rem;
+    }
+}
+
+.article-excerpt-list {
+
+    line-height: 1.5;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ol {
+    padding-left: 0px;
+}
+
+.article-excerpt-list ul {
+    font-size: 1.2rem;
+}
+
+.article-img {
+
+    margin-top: 1rem;
+    height: 20px;
+}
+
+.button {
+    transition-duration: 0.4s;
+    border-radius: 2px;
+    background-color: #74b0ff52;
+    color: black;
+    border: 1px solid grey;
+    width: 100%;
+
+}
+
+.button:hover {
+    background-color: #74b0ff;
+    color: black;
+}
+
+input:invalid {
+    border: red solid 3px;
+}
+
+
+.js-plotly-plot,
+.plot-container {
+    height: 100vh;
+}
+
+.input {
+    width: 100%;
+}
+
+:focus {
+    outline: 0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="navbar_menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="website_style.css">
+</head>
+
+<body>
+
+    <header class="header responsive-wrapper">
+        <div class="header-left">
+            <div class="site-identity">
+                <a href="#"><img
+                        src="https://s3.us-east-2.amazonaws.com/gns-grocerystorenavigator.com/shopping_cart.png"
+                        object-fit:contain, alt="Shopping Cart Logo" /></a>
+            </div>
+            <h3>gns-grocerystorenavigator.com</h3>
+
+        </div>
+        <div class="header-right">
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html">Home</a>
+                <a href="./how-to.html">How To Use</a>
+                <a href="./2-opt-algo.html">2-Opt Algorithm</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="responsive-wrapper">
+        <div class="page-title">
+            <h1>Grocery Store Navigator - 2-Opt Algorithm</h1>
+        </div>
+
+        <div class="magazine-layout-otherPages">
+            <div class="magazine-column">
+                <article class="article">
+                    <h2 class="article-title article-title-large">Description</h2>
+                    <div class="article-excerpt">
+                        <p> The Grocery Store Navigator uses the simple search algorithm 2-opt for it's calculations.
+                            This algorithm attempts to find the shortest path between a given list of nodes. In general,
+                            the algorithm works by swapping two arcs in the hope that is results in a shorter overall
+                            path distance. If the swap does result in a shorter path, the current path is updated. This
+                            process continues until there are no more improvements or all combinations of arc swaps have
+                            been completed. </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <h2 class="article-title article-title-large">Implementation</h2>
+                    <div class="article-excerpt">
+
+                        <p> This implementation of the 2-opt algorithm keeps the first and last nodes on the path
+                            constant. The first node will always be the Entrance, and the last node will always be the
+                            Exit. This idea better reprents the decision making and path finding any given person would
+                            use when shopping at a grocery store. They must begin the trip by walking into the entrance,
+                            and eventually leaving through the exit. </p>
+                    </div>
+                </article>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+
+</body>
+
+</html>

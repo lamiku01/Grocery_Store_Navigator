@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="navbar_menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="website_style.css">
+</head>
+
+<body>
+
+    <header class="header responsive-wrapper">
+        <div class="header-left">
+            <div class="site-identity">
+                <a href="#"><img
+                        src="https://s3.us-east-2.amazonaws.com/gns-grocerystorenavigator.com/shopping_cart.png"
+                        object-fit:contain, alt="Shopping Cart Logo" /></a>
+            </div>
+            <h3>gns-grocerystorenavigator.com</h3>
+        </div>
+        <div class="header-right">
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html">Home</a>
+                <a href="./how-to.html">How To Use</a>
+                <a href="./2-opt-algo.html">2-Opt Algorithm</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="responsive-wrapper">
+        <div class="page-title">
+            <h1>Grocery Store Navigator - How To Use</h1>
+        </div>
+
+        <div class="magazine-layout-otherPages">
+            <div class="magazine-column">
+                <article class="article">
+                    <h2 class="article-title article-title-large">General Overview</h2>
+                    <div class="article-excerpt">
+                        <p>
+                            The Grocery Store Navigator is meant to be a simplistic solution to mapping out a rough path
+                            through the store given your grocery list. As a result, the tool simplifies the search by
+                            pre-selecting a few qualities. First, when the user searches for an item, only the first
+                            instance of the item in the API will be returend. Second, all items searched will be
+                            restricted to the pre-defined store location only. Additonally, some items are only listed
+                            with a specific aisle location in the API. These items instead are located by catergory. The
+                            category space and size can vary, so the exact item location is not as precise as if it had
+                            an aisle location.
+                        </p>
+                    </div>
+                    <h2 class="article-title article-title-large">Instructions</h2>
+                    <div class="article-excerpt">
+                        <ul>
+                            <li>Enter the items separated by a comma and a space. Incorrect formatting will result in an
+                                error-message pop-up. </li>
+                            <li>Only use generic item names. Do not use brand-names or specific item titles. For
+                                example: write "ice cream" instead of "Ben And Jerry's Chocolate Ice Cream</li>
+                            <li>Click the "Submit" button once. Selecting the button again before the process is
+                                complete may result in extraneous results.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

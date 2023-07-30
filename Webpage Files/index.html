@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
+    <script src="source.js"></script>
+    <script src="navbar_menu.js"></script>
+
+    <link rel="stylesheet" href="website_style.css">
+
+</head>
+
+<body>
+
+    <header class="header responsive-wrapper">
+        <div class="header-left">
+            <div class="site-identity">
+                <a href="#"><img
+                        src="https://s3.us-east-2.amazonaws.com/gns-grocerystorenavigator.com/shopping_cart.png"
+                        object-fit:contain, alt="Shopping Cart Logo" /></a>
+            </div>
+            <h3>gns-grocerystorenavigator.com</h3>
+        </div>
+        <div class="header-right">
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html">Home</a>
+                <a href="./how-to.html">How To Use</a>
+                <a href="./2-opt-algo.html">2-Opt Algorithm</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="responsive-wrapper">
+        <div class="page-title">
+            <h1>Grocery Store Navigator - Home</h1>
+        </div>
+
+        <div class="magazine-layout-indexPage">
+            <div class="magazine-column">
+                <article class="article">
+                    <h2 class="article-title article-title--large">Grocery List</h2>
+                    <div class="article-excerpt">
+                        <p> Please enter grocery list below. Separate items with a comma and space.</p>
+                        <form action="#">
+                            <input class="input" type="text" id="textInput" placeholder="milk, apple, bread"
+                                pattern="(\w( )*)+((, )*(\w( )*))*" title="Separate items by a comma and space"
+                                spellcheck="true">
+                            <br></br>
+                            <button onclick="checkInput()" class="button button">Submit</button>
+                        </form>
+                    </div>
+                </article>
+                <div class="article">
+                    <div class="article-excerpt-list">
+
+                        <ul id="myList"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="magazine-column">
+                <article class="article">
+                    <h2 class="article-title article-title--small">Kroger Map</h2>
+                    <div class="plot-container" id="tester"></div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <script src="plotly_graph.js"></script>
+
+    </script>
+
+</body>
+
+</html>
